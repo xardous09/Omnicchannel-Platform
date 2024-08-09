@@ -1,1 +1,1 @@
-# Omnicchannel-Platform
+# Omnichannel-Platform
