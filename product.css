@@ -1,0 +1,239 @@
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-weight: 800;
+    color: #7c7c7c;
+    font-size: 1.5rem;
+}
+
+.form input {
+    width: 500px;
+    margin-bottom: -15px;
+    border-radius: 0;
+    border: none;
+    border-bottom: 3px solid silver;
+    background: transparent;
+}
+
+.form button {
+    color: white;
+    background: rgba(0,0,0,0.5);
+    padding: 0 10px;
+    border-radius: 0;
+}
+
+.nav i {
+    font-size: 1.3rem;
+    background: black;
+    color: white;
+    padding: 10px 15px;
+}
+
+main {
+    padding-top: 10px;
+    background: #EBEBEB;
+    height: 100vh;
+}
+
+hr {
+    background: #e1e1e1;
+}
+
+.cos-model {
+    position: relative;
+    top: 250px;
+}
+
+.cos-model img {
+    cursor: pointer;
+    transition: -5s;
+}
+
+.cos-model img:hover {
+    transform: translateX(10px);
+}
+
+.preview img {
+    position: relative;
+    top: 120px;
+    left: 400px;
+    width: 400px;
+    background-color: linear-gradient(#e1e1e1, #b02c2c);
+}
+
+.container {
+    
+    background-color: #e1e1e1;
+    /* min-height: calc(100vh - 50px); */
+    
+    color: white;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+  }
+
+  .shop-container {
+    left: 20px;
+    top: 50px;
+    padding: 0 20px;
+    position:absolute;
+    
+    margin: auto;
+    height: 150px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    /* text-align: center; */
+  }
+  
+  .shop-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    /* s */
+  }
+  
+  .shop-list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: 800px;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+  }
+  
+  .shop-item {
+    margin-right: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 300px; 
+    height: 250px;
+  }
+  
+  .shop-item:hover .shop-item-img {
+    transform: scale(1.2);
+    margin: 0 30px;
+    opacity: 0.5;
+  }
+  
+  .shop-item:hover .shop-item-title,
+  .shop-item:hover .shop-item-desc,
+  .shop-item:hover .shop-item-button {
+    opacity: 1;
+  }
+  
+  .shop-item-img {
+    transition: all 1s ease-in-out;
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  
+  .shop-item-title {
+    background-color: #333;
+    padding: 0 10px;
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+  }
+  
+  .shop-item-desc {
+    background-color: #333;
+    padding: 10px;
+    font-size: 14px;
+    position: absolute;
+    top: 30%;
+    left: 50px;
+    width: 230px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+  }
+  
+  .shop-item-button {
+    padding: 10px;
+    background-color: #4dbf00;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+  }
+.parameter {
+    padding-top: 70px;
+    margin-top: 50px;
+}
+
+.parameter h6 {
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+
+}
+
+.parameter h1 {
+    font-weight: 700;
+    letter-spacing: 5px;
+    margin-top: -20px;
+}
+
+.parameter p {
+    color: #a8a8a8;
+}
+
+.parameter h5{
+    letter-spacing: 4px;
+    font-family: 700;
+    margin-top: 20px;
+}
+
+.parameter h5 span{
+    letter-spacing: 0;
+    color: #a8a8a8;
+    font-size: 0.8rem;
+}
+
+.parameter h2{
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.parameter h2 span{
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.cart{
+    margin-top: 20px;
+}
+
+.cart button{
+    padding: 15px 20px;
+    background: #474747;
+    color: white;
+    border-radius: 0;
+    margin-left: 10px;
+}
+
+.cart button:first-of-type{
+    padding: 15px 100px;
+    background-color: #474747;
+    color: white;
+    border-radius: 0;
+}
