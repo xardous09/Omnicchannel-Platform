@@ -1,0 +1,231 @@
+/* Header */
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    align-items: center;
+}
+
+/* Navbar Brand */
+.navbar-brand {
+    font-weight: 800;
+    color: #7c7c7c;
+    font-size: 1.5rem;
+}
+
+/* Search Form */
+.form input {
+    width: 400px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background: transparent;
+    border-radius: 0;
+    margin-right: 5px;
+}
+
+.form button {
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 0;
+}
+
+/* Navbar Icons */
+.nav i {
+    font-size: 1.3rem;
+    background: black;
+    color: white;
+    padding: 10px 15px;
+}
+
+/* Main Content */
+main {
+    padding-top: 50px;
+    background: #EBEBEB;
+    min-height: 100vh;
+}
+
+hr {
+    background: #e1e1e1;
+}
+
+/* Thumbnail Container */
+.thumbnail-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 20px;
+}
+
+/* Thumbnails */
+.thumbnail {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s ease;
+}
+
+.thumbnail:hover {
+    border: 2px solid #474747;
+}
+
+/* Main Preview */
+.preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    margin-top: 20px;
+}
+
+.preview img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.preview img:hover {
+    transform: scale(1.05);
+}
+
+/* Shop Container */
+.container {
+    background-color: #e1e1e1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Shop Section */
+.shop-container {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.shop-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.shop-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 250px;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.shop-item:hover .shop-item-img {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.shop-item:hover .shop-item-title,
+.shop-item:hover .shop-item-desc,
+.shop-item:hover .shop-item-button {
+    opacity: 1;
+}
+
+/* Shop Item Elements */
+.shop-item-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.shop-item-title,
+.shop-item-desc,
+.shop-item-button {
+    position: absolute;
+    left: 20px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.shop-item-title {
+    top: 20%;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.shop-item-desc {
+    top: 40%;
+    font-size: 14px;
+    color: #fff;
+}
+
+.shop-item-button {
+    bottom: 20px;
+    padding: 10px 20px;
+    background-color: #4dbf00;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Product Parameters */
+.parameter {
+    margin-top: 50px;
+    padding-top: 20px;
+}
+
+.parameter h6 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.parameter h1 {
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.parameter p {
+    color: #444;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.parameter .detail h5 {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.parameter .detail span {
+    color: #777;
+}
+
+.price h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.cart button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.cart .btn i {
+    font-size: 1.2rem;
+}
