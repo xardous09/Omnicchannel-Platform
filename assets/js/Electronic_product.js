@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
             manufacturer: 'TechMouse Inc.',
             weight: '100 grams',
             packer: 'TechMouse Inc.',
-            price: '$35.00'
+            price: '35.00'
         }
         
     };
