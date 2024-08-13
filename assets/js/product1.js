@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const productInfo = {
         1: {
-            img: './assets/images/product-01.jpg',
+            img: 'assets/images/product-01.jpg',
             title: 'Facial Cleanser',
             description: 'Readily absorbs into facial skin, helping to leave it soft and nurtured all day. Helps keep skin moisturized with 24-hour hydration. For all skin types',
             manufacturer: "L'Oreal S.A",
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: '29.00'
         },
         2: {
-            img: './assets/images/product-02.jpg',
+            img: 'assets/images/product-02.jpg',
             title: 'Anti-Aging Cream',
             description: 'Reduces the appearance of fine lines and wrinkles. Formulated with antioxidants and vitamins.',
             manufacturer: 'SkinCo Inc.',
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: '45.00'
         },
         3: {
-            img: './assets/images/product-03.jpg',
+            img: 'assets/images/product-03.jpg',
             title: 'Moisturizing Lotion',
             description: 'Hydrates and softens skin. Ideal for dry skin types. Contains natural oils and extracts.',
             manufacturer: 'PureSkin Labs',
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: '30.00'
         },
         4: {
-            img: './assets/images/product-04.jpg',
+            img: 'assets/images/product-04.jpg',
             title: 'Sunscreen SPF 50',
             description: 'Provides broad-spectrum sun protection. Lightweight and non-greasy formula.',
             manufacturer: 'SunGuard LLC',
