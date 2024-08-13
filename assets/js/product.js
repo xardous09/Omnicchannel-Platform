@@ -75,6 +75,42 @@ document.addEventListener('DOMContentLoaded', () => {
             weight: '100ml',
             packer: 'SunGuard Ltd.',
             price: '35.00'
+        },
+        9: {
+            img: './assets/images/product-09.jpg',
+            title: 'Sunscreen SPF 50',
+            description: 'Provides broad-spectrum sun protection. Lightweight and non-greasy formula.',
+            manufacturer: 'SunGuard LLC',
+            weight: '100ml',
+            packer: 'SunGuard Ltd.',
+            price: '35.00'
+        },
+        10: {
+            img: './assets/images/product-10.jpg',
+            title: 'Sunscreen SPF 50',
+            description: 'Provides broad-spectrum sun protection. Lightweight and non-greasy formula.',
+            manufacturer: 'SunGuard LLC',
+            weight: '100ml',
+            packer: 'SunGuard Ltd.',
+            price: '35.00'
+        },
+        11: {
+            img: './assets/images/product-11.jpg',
+            title: 'Sunscreen SPF 50',
+            description: 'Provides broad-spectrum sun protection. Lightweight and non-greasy formula.',
+            manufacturer: 'SunGuard LLC',
+            weight: '100ml',
+            packer: 'SunGuard Ltd.',
+            price: '35.00'
+        },
+        12: {
+            img: './assets/images/product-15.jpg',
+            title: 'Sunscreen SPF 50',
+            description: 'Provides broad-spectrum sun protection. Lightweight and non-greasy formula.',
+            manufacturer: 'SunGuard LLC',
+            weight: '100ml',
+            packer: 'SunGuard Ltd.',
+            price: '35.00'
         }
     };
 
