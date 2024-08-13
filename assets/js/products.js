@@ -77,20 +77,20 @@ const products = [
         "image": "images/product-11.jpg",
         "description": "Readily absorbs into facial skin, helping to leave it soft and nurtured all day.Helps keep skin moisturized with 24-hour hydration.For all skin types"
     },
-    // {
-    //     "id": 13,
-    //     "name":" LD07 LOUNGE CHAIR",
-    //     "price": 200,
-    //     "image": "images/product-13.jpg",
-    //     "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
-    // },
-    // {
-    //     "id": 14,
-    //     "name":" LD07 LOUNGE CHAIR",
-    //     "price": 200,
-    //     "image": "images/product-14.jpg",
-    //     "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
-    // },
+    {
+        "id": 13,
+        "name":"Cosmetics",
+        "price": 29.00,
+        "image": "images/product-13.jpg",
+        "description": "Readily absorbs into facial skin, helping to leave it soft and nurtured all day.Helps keep skin moisturized with 24-hour hydration.For all skin types"
+    },
+    {
+        "id": 14,
+        "name":"Cosmetics",
+        "price": 28.00,
+        "image": "images/product-14.jpg",
+        "description": "Readily absorbs into facial skin, helping to leave it soft and nurtured all day.Helps keep skin moisturized with 24-hour hydration.For all skin types"
+    },
     {
         "id": 15,
         "name":"Cosmetics",

@@ -39,42 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
             weight: '100ml',
             packer: 'SunGuard Ltd.',
             price: '35.00'
-        },
-        5: {
-            img: './assets/images/product-05.jpg',
-            title: 'Facial Cleanser',
-            description: 'Readily absorbs into facial skin, helping to leave it soft and nurtured all day. Helps keep skin moisturized with 24-hour hydration. For all skin types',
-            manufacturer: "L'Oreal S.A",
-            weight: '75ml',
-            packer: 'Quest Retail Pvt Ltd',
-            price: '29.00'
-        },
-        6: {
-            img: './assets/images/product-06.jpg',
-            title: 'Anti-Aging Cream',
-            description: 'Reduces the appearance of fine lines and wrinkles. Formulated with antioxidants and vitamins.',
-            manufacturer: 'SkinCo Inc.',
-            weight: '50ml',
-            packer: 'Beauty Corp',
-            price: '45.00'
-        },
-        7: {
-            img: './assets/images/product-07.jpg',
-            title: 'Moisturizing Lotion',
-            description: 'Hydrates and softens skin. Ideal for dry skin types. Contains natural oils and extracts.',
-            manufacturer: 'PureSkin Labs',
-            weight: '200ml',
-            packer: 'PureSkin Co.',
-            price: '30.00'
-        },
-        8: {
-            img: './assets/images/product-08.jpg',
-            title: 'Sunscreen SPF 50',
-            description: 'Provides broad-spectrum sun protection. Lightweight and non-greasy formula.',
-            manufacturer: 'SunGuard LLC',
-            weight: '100ml',
-            packer: 'SunGuard Ltd.',
-            price: '35.00'
         }
     };
 
