@@ -1,4 +1,5 @@
-import products from "./products.js";
+import products from "./Electronic_products";
+
 const cart = () => {
     let listCartHTML = document.querySelector('.listCart');
     let iconCart = document.querySelector('.icon-cart');
@@ -10,10 +11,10 @@ const cart = () => {
     // open and close tab
     iconCart.addEventListener('click', () => {
         body.classList.toggle('activeTabCart');
-    })
+    });
     closeCart.addEventListener('click', () => {
         body.classList.toggle('activeTabCart');
-    })
+    });
 
     const setProductInCart = (idProduct, value) => {
         let positionThisProductInCart = cart.findIndex((value) => value.product_id == idProduct);
@@ -28,28 +29,28 @@ const cart = () => {
             cart[positionThisProductInCart].quantity = value;
         }
         localStorage.setItem('cart', JSON.stringify(cart));
+        console.log('Cart updated:', cart);
         addCartToHTML();
-    }
+    };
 
     const addCartToHTML = () => {
         listCartHTML.innerHTML = '';
         let totalQuantity = 0;
         if (cart.length > 0) {
             cart.forEach(item => {
-                totalQuantity = totalQuantity + item.quantity;
+                totalQuantity += item.quantity;
                 let newItem = document.createElement('div');
                 newItem.classList.add('item');
                 newItem.dataset.id = item.product_id;
 
                 let positionProduct = products.findIndex((value) => value.id == item.product_id);
                 let info = products[positionProduct];
-                listCartHTML.appendChild(newItem);
                 newItem.innerHTML = `
-                <div class="image">
+                    <div class="image">
                         <img src="${info.image}">
                     </div>
                     <div class="name">
-                    ${info.name}
+                        ${info.name}
                     </div>
                     <div class="totalPrice">$${info.price * item.quantity}</div>
                     <div class="quantity">
@@ -58,10 +59,11 @@ const cart = () => {
                         <span class="plus" data-id="${info.id}">></span>
                     </div>
                 `;
-            })
+                listCartHTML.appendChild(newItem);
+            });
         }
         iconCartSpan.innerText = totalQuantity;
-    }
+    };
 
     document.addEventListener('click', (event) => {
         let buttonClick = event.target;
@@ -84,15 +86,16 @@ const cart = () => {
             default:
                 break;
         }
-    })
+    });
 
     const initApp = () => {
-
         if (localStorage.getItem('cart')) {
             cart = JSON.parse(localStorage.getItem('cart'));
+            console.log('Cart loaded from localStorage:', cart);
             addCartToHTML();
         }
-    }
+    };
     initApp();
-}
+};
+
 export default cart;

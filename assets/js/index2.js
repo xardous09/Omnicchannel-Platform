@@ -1,23 +1,27 @@
-import products from '/products.js';
-import cart from './cart.js';
+import products from './Electronic_products';
+import cart from './electronics-cart';
 
 let app = document.getElementById('app');
 let temporaryContent = document.getElementById('temporaryContent');
 
 // load layout file
 const loadTemplate = () => {
-    fetch('/template.html')
+    fetch('/template1.html')
         .then(response => response.text())
         .then(html => {
+            console.log('Template loaded');
             app.innerHTML = html;
             let contentTab = document.getElementById('contentTab');
+            console.log('Content tab:', contentTab);
             contentTab.innerHTML = temporaryContent.innerHTML;
             temporaryContent.innerHTML = null;
             cart();
             initApp();
         })
+        .catch(error => console.error('Error loading template:', error));
 }
 loadTemplate();
+
 const initApp = () => {
     // load list product
     let listProductHTML = document.querySelector('.listProduct');
