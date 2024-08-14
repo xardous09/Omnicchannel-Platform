@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="./assets/css/product.css">
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <nav class="navbar">
+                <a href="Cosmetics.html" class="navbar-brand">Glammer</a>
+                <div class="form">
+                    <input type="search" class="form-control" placeholder="Search here...">
+                    <button class="btn"><span class="fa fa-search"></span></button>
+                </div>
+                <i class="fa fa-bars"></i>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="product-section">
+            <div class="thumbnails">
+                <!-- Use data attributes to link to products -->
+                <img src="electronic_images/Accessories/img24.jpeg" class="thumb" data-product-id="9" alt="Product 9">
+                <img src="electronic_images/Accessories/img25.jpeg" class="thumb" data-product-id="10" alt="Product 10">
+                <img src="electronic_images/Accessories/img26.jpeg" class="thumb" data-product-id="11" alt="Product 11">
+                <img src="electronic_images/Accessories/img27.webp" class="thumb" data-product-id="12" alt="Product 12">
+            </div>
+            <div class="preview">
+                <img id="preview" src="electronic_images/Accessories/img24.jpeg" alt="Preview">
+            </div>
+            <div class="product-details" id="product-details">
+                <h6>Portable Bluetooth Speaker</h6>
+                <h1 class="display-2">Glammer</h1>
+                <p id="product-description">Compact and powerful portable Bluetooth speaker with high-quality sound, 
+                  <br>long battery life, 
+                  <br>and rugged design for outdoor use</p>
+                <div class="detail">
+                    <h5>Manufacturer: <span id="manufacturer">AudioTech Inc</span></h5>
+                    <h5>Weight: <span id="weight">300gm</span></h5>
+                    <h5>Packer: <span id="packer">AudioTech Inc</span></h5>
+                </div>
+                <hr>
+                <div class="price">
+                    <h2><span><sup>$</sup></span><span id="price">60.00</span></h2>
+                </div>
+                <div class="cart">
+                    <a href="index.html"><button class="btn">ADD TO CART</button></a>
+                    <button class="btn"><i class="far fa-heart"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="shop-container">
+            <h1 class="shop-title">SHOPS AVAILABILITY</h1>
+            <div class="shop-wrapper">
+                <div class="shop-list">
+                    <div class="shop-item">
+                        <img class="shop-item-img" src="./assets/images/shop.jpg" alt="">
+                        <span class="shop-item-title">Walmart</span>
+                        <p class="shop-item-desc">Available </p>
+                        <button class="shop-item-button">Explore</button>
+                    </div>
+                    <div class="shop-item">
+                        <img class="shop-item-img" src="./assets/images/shop1.jpg" alt="">
+                        <span class="shop-item-title">Walmart</span>
+                        <p class="shop-item-desc">Not Available</p>
+                        <button class="shop-item-button">Explore</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" data-section>
+    <div class="container">
+      <div class="footer-top">
+        <nav class="footer-section">
+          <h2 class="footer-section-title">Company</h2>
+          <ul>
+            <li><p>Find a location nearest you. See <a href="#" class="link">Our Stores</a></p></li>
+            <li><p class="bold">+391 (0)35 2568 4593</p></li>
+            <li><p><a href="mailto:hello@domain.com" class="link">hello@domain.com</a></p></li>
+          </ul>
+        </nav>
+        <nav class="footer-section">
+          <h2 class="footer-section-title">Useful links</h2>
+          <ul>
+            <li><a href="#" class="footer-link">New Products</a></li>
+            <li><a href="#" class="footer-link">Best Sellers</a></li>
+            <li><a href="#" class="footer-link">Bundle & Save</a></li>
+            <li><a href="#" class="footer-link">Online Gift Card</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-section">
+          <h2 class="footer-section-title">Information</h2>
+          <ul>
+            <li><a href="#" class="footer-link">Start a Return</a></li>
+            <li><a href="#" class="footer-link">Contact Us</a></li>
+            <li><a href="#" class="footer-link">Shipping FAQ</a></li>
+            <li><a href="#" class="footer-link">Terms & Conditions</a></li>
+            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+          </ul>
+        </nav>
+        <div class="footer-section">
+          <h2 class="newsletter-title">Good emails.</h2>
+          <p class="newsletter-text">Enter your email below to be the first to know about new collections and product launches.</p>
+          <form action="" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="Enter your email address" required class="email-field">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="wrapper">
+          <p class="copyright">&copy; 2022 codewithsadee</p>
+          <ul class="social-list">
+            <li><a href="#" class="social-link" aria-label="Twitter"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="#" class="social-link" aria-label="Facebook"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#" class="social-link" aria-label="Instagram"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="#" class="social-link" aria-label="YouTube"><ion-icon name="logo-youtube"></ion-icon></a></li>
+          </ul>
+        </div>
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" width="179" height="26" loading="lazy" alt="Glowing">
+        </a>
+        <div class="payment-icons">
+          <img src="./assets/images/pay.png" alt="Available Payment Methods">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/js/Electronic_product.js"></script>
+</body>
+</html>
