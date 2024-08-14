@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: '30.00'
         },
         8: {
-            img: './img/products/f8.jpg',
+            img: './img/products/f7.jpg',
             title: 'Sunscreen SPF 50',
             description: 'Provides broad-spectrum sun protection. Lightweight and non-greasy formula.',
             manufacturer: 'SunGuard LLC',
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: '35.00'
         },
         9: {
-            img: './img/products/f9.jpg',
+            img: './img/products/n1.jpg',
             title: 'Sunscreen SPF 50',
             description: 'Provides broad-spectrum sun protection. Lightweight and non-greasy formula.',
             manufacturer: 'SunGuard LLC',
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: '35.00'
         },
         10: {
-            img: './img/products/f10.jpg',
+            img: './img/products/n2.jpg',
             title: 'Sunscreen SPF 50',
             description: 'Provides broad-spectrum sun protection. Lightweight and non-greasy formula.',
             manufacturer: 'SunGuard LLC',
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: '35.00'
         },
         11: {
-            img: './img/products/f11.jpg',
+            img: './img/products/n3.jpg',
             title: 'Sunscreen SPF 50',
             description: 'Provides broad-spectrum sun protection. Lightweight and non-greasy formula.',
             manufacturer: 'SunGuard LLC',
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: '35.00'
         },
         12: {
-            img: './img/products/f12.jpg',
+            img: './img/products/n4.jpg',
             title: 'Sunscreen SPF 50',
             description: 'Provides broad-spectrum sun protection. Lightweight and non-greasy formula.',
             manufacturer: 'SunGuard LLC',

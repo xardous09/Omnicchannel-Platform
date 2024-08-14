@@ -2,14 +2,14 @@ const products = [{
         id: 1,
         name: "Cosmetics",
         price: 29.00,
-        image: "img/products/f1.jpg",
+        image: "images/product-01.jpg",
         description: "Readily absorbs into facial skin, helping to leave it soft and nurtured all day. Helps keep skin moisturized with 24-hour hydration. For all skin types."
     },
     {
         id: 2,
         name: "Cosmetics",
         price: 27.00,
-        image: "img/products/f2.jpg",
+        image: "images/product-02.jpg",
         description: "Readily absorbs into facial skin, helping to leave it soft and nurtured all day. Helps keep skin moisturized with 24-hour hydration. For all skin types."
     },
     {

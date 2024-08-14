@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: '6.00'
         },
         2: {
-            img: './products/yardley_london _race_deo.jpg',
+            img: './fashon-products/yardley_london _race_deo.jpg',
             title: ' Yardley London Race Deodorant',
             description: 'Stay fresh and confident all day with Yardley London Race Deodorant, a premium body spray designed for the modern man. Infused with a dynamic and invigorating fragrance.',
             manufacturer: 'Yardley London',
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: '9.00'
         },
         3: {
-            img: './products/patanjali_sheetal_hair_oil.jpg',
+            img: './fashon-products/patanjali_sheetal_hair_oil.jpg',
             title: 'Patanjali Sheetal Hair Oil',
             description: 'Revitalize your scalp and hair with Patanjali Sheetal Hair Oil, a natural blend of cooling and nourishing herbs designed to promote healthy hair and a calm mind. ',
             manufacturer: 'Patanjali LLC',
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: '7.00'
         },
         4: {
-            img: './products/parachute_pure_coconut_hair_oil.jpg',
+            img: './fashon-products/parachute_pure_coconut_hair_oil.jpg',
             title: 'Parachute Pure Coconut Hair Oil',
             description: 'Nourish your hair with the natural goodness of Parachute Pure Coconut Hair Oil, a trusted choice for healthier and stronger hair. Made from 100% pure coconut oil.',
             manufacturer: 'Marico Limited',
