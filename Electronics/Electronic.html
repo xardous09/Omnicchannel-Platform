@@ -15,7 +15,7 @@
   <!-- 
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">5
   <link rel="stylesheet" href="style.css">
 
 
@@ -33,7 +33,6 @@
   <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
   <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
   <link rel="preload" as="image" href="./assets/images/hero-banner-3.jpg">
-
 
 </head>
 
@@ -69,7 +68,7 @@
         </div>
 
         <!-- <a href="#" class="logo">
-          <img src="./assets/images/logo.png" width="179" height="26" alt="Grocery ">
+          <img src="./assets/images/logo.png" width="179" height="26" alt="Glowing">
         </a> -->
 
         <div class="header-actions">
@@ -77,14 +76,20 @@
           <button class="header-action-btn" aria-label="user">
             <ion-icon name="person-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
           </button>
-          </button>
 
-          <button class="header-action-btn" aria-label="cart item">
-
-            <ion-icon name="bag-handle-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+          <!-- <button class="header-action-btn" aria-label="favourite item">
+            <ion-icon name="star-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
 
             <span class="btn-badge">0</span>
-          </button>
+          </button> -->
+
+          <div class="icon-cart">
+            <button class="header-action-btn" aria-label="cart item">            
+                <ion-icon name="bag-handle-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+    
+                <span class="btn-badge">0</span>
+            </button>
+        </div>
 
         </div>
 
@@ -99,23 +104,19 @@
             </li>
 
             <li>
-              <a href="Electronic.html" class="navbar-link has-after">Electronics</a>
+              <a href="/Electronics/Electronic.html" class="navbar-link has-after">Electronics</a>
             </li>
 
             <li>
-              <a href="grocery.html" class="navbar-link has-after">Groceries</a>
+              <a href="/Grocery/grocery.html" class="navbar-link has-after">Groceries</a>
             </li>
 
             <li>
-              <a href="Cosmetics.html" class="navbar-link has-after">Cosmetics</a>
+              <a href="/Cosmetics/Cosmetics.html" class="navbar-link has-after">Cosmetics</a>
             </li>
 
             <li>
-              <a href="Fashon.html" class="navbar-link has-after">Fashion</a>
-            </li>
-
-            <li>
-              <a href="#blog" class="navbar-link has-after">New Releases</a>
+              <a href="/Fashion/Fashon.html" class="navbar-link has-after">Fashion</a>
             </li>
 
             <li>
@@ -200,20 +201,23 @@
           <ul class="has-scrollbar">
 
             <li class="scrollbar-item">
-              <div class="hero-card has-bg-image" style="background-image: url('./products/b1.jpg')">
+              <div class="hero-card has-bg-image" style="background-image: url('electronic_images/slide1.jpg')">
 
                 <div class="card-content">
 
                   <h1 class="h1 hero-title">
-                    Your Grocery, <br>
-                    Your Way 
+                    Trade-in <br>
+                    offer <br>
+                    Super value deals
+
                   </h1>
 
                   <p class="hero-text">
-                    Choose from a wide selection of farm-fresh produce, pantry staples, and more.
+                    On all products
+
                   </p>
 
-                  <p class="price">Order Now for Fast Delivery</p>
+                  <p class="price">Save more with coupons & up to 70% off</p>
 
                   <a href="#" class="btn btn-primary">Shop Now</a>
 
@@ -223,20 +227,21 @@
             </li>
 
             <li class="scrollbar-item">
-              <div class="hero-card has-bg-image" style="background-image: url('./products/b2.png')">
+              <div class="hero-card has-bg-image" style="background-image: url('electronic_images/slide2.jpg')">
 
                 <div class="card-content">
 
                   <h1 class="h1 hero-title">
-                    Your One-Stop Shop  <br>
-                    for Fresh Groceries
+                    Free Shipping <br>
+                    on Orders <br>
+                    Over $50
                   </h1>
 
                   <p class="hero-text">
-                    Discover a wide range of fresh fruits, vegetables, and essentials at unbeatable prices. Delivered when you need them.
+                    Enjoy free standard shipping on all orders over $50.
                   </p>
 
-                  <p class="price">Browse Our Selection</p>
+                  <p class="price">Shop more to save more! Automatically applied at checkout for qualifying orders.</p>
 
                   <a href="#" class="btn btn-primary">Shop Now</a>
 
@@ -246,20 +251,21 @@
             </li>
 
             <li class="scrollbar-item">
-              <div class="hero-card has-bg-image" style="background-image: url('./products/main4.jpg');">
+              <div class="hero-card has-bg-image" style="background-image: url('electronic_images/slide3.jpg')">
 
                 <div class="card-content">
 
                   <h1 class="h1 hero-title">
-                    Healthy<br>
-                    And Tasty.
+                    Buy One <br>
+                    Get <br>
+                    One Free <br>
                   </h1>
 
                   <p class="hero-text">
-                    Get the best deals on fresh produce, dairy, and more. Shop now and enjoy fast delivery.
+                    Buy any selected collection and get another one free!
                   </p>
 
-                  <p class="price">Start Shopping Best Dells.</p>
+                  <p class="price">Perfect for updating your wardrobe with the latest trends. Offer available on selected items only.</p>
 
                   <a href="#" class="btn btn-primary">Shop Now</a>
 
@@ -289,17 +295,17 @@
             <li>
               <div class="collection-card has-before hover:shine">
 
-                <h2 class="h2 card-title">Packed Foods</h2>
+                <h2 class="h2 card-title">Summer Collection</h2>
 
-                <p class="card-text"></p>
+                <p class="card-text">Starting at $17.99</p>
 
-                <a href="#" class="btn-link">
+                <a href="product-page.html" class="btn-link">
                   <span class="span">Shop Now</span>
 
                   <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                 </a>
 
-                <div class="has-bg-image" style="background-image: url('./products/packed.jpg')"></div>
+                <div class="has-bg-image" style="background-image: url('electronic_images/Household/img11.png')"></div>
 
               </div>
             </li>
@@ -307,9 +313,9 @@
             <li>
               <div class="collection-card has-before hover:shine">
 
-                <h2 class="h2 card-title">Dairy And Eggs</h2>
+                <h2 class="h2 card-title">What’s New?</h2>
 
-                <p class="card-text"></p>
+                <p class="card-text">Get the glow</p>
 
                 <a href="#" class="btn-link">
                   <span class="span">Discover Now</span>
@@ -317,7 +323,7 @@
                   <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                 </a>
 
-                <div class="has-bg-image" style="background-image: url('./products/dairy.jpg')"></div>
+                <div class="has-bg-image" style="background-image: url('electronic_images/acc2.jpeg')"></div>
 
               </div>
             </li>
@@ -325,9 +331,9 @@
             <li>
               <div class="collection-card has-before hover:shine">
 
-                <h2 class="h2 card-title">Household Care</h2>
+                <h2 class="h2 card-title">Buy 1 Get 1</h2>
 
-                <p class="card-text"></p>
+                <p class="card-text">Starting at $7.99</p>
 
                 <a href="#" class="btn-link">
                   <span class="span">Discover Now</span>
@@ -335,7 +341,7 @@
                   <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                 </a>
 
-                <div class="has-bg-image" style="background-image: url('./products/house.jpg')"></div>
+                <div class="has-bg-image" style="background-image: url('electronic_images/Accessories/img15.jpeg')"></div>
 
               </div>
             </li>
@@ -359,7 +365,7 @@
           <div class="title-wrapper">
             <h2 class="h2 section-title">Our Bestsellers</h2>
 
-            <a href="#" class="btn-link">
+            <a href="Accessories.html" class="btn-link">
               <span class="span">Shop All Products</span>
 
               <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
@@ -372,8 +378,8 @@
               <div class="shop-card">
 
                 <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <a href="grocery1.html"><img src="./products/cadbury_miniatures_dairy_milk_silk_chocolate.jpg" width="350" height="1020" loading="lazy"
-                    alt="cadbury miniatures silk Chocolate" class="img-cover" ></a>
+                  <img src="electronic_images/toy10.jpeg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
 
                   <span class="badge" aria-label="20% off">-20%</span>
 
@@ -403,7 +409,7 @@
                   </div>
 
                   <h3>
-                    <a href="#" class="card-title">Cadbury silk Chocolate</a>
+                    <a href="#" class="card-title">......</a>
                   </h3>
 
                   <div class="card-rating">
@@ -429,8 +435,8 @@
               <div class="shop-card">
 
                 <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <a href="grocery1.html"><img src="./products/denver_hamilton caliber_deo.jpg" width="540" height="640" loading="lazy"
-                    alt="Denver Hamilton Caliber Deo" class="img-cover">
+                  <img src="electronic_images/apple1.jpeg" width="540" height="720" loading="lazy"
+                    alt="Bio-shroom Rejuvenating Serum" class="img-cover">
 
                   <div class="card-actions">
 
@@ -452,11 +458,11 @@
                 <div class="card-content">
 
                   <div class="price">
-                    <span class="span">$10.00</span>
+                    <span class="span">$29.00</span>
                   </div>
 
                   <h3>
-                    <a href="#" class="card-title">Denver Hamilton Caliber Deo</a>
+                    <a href="#" class="card-title">........</a>
                   </h3>
 
                   <div class="card-rating">
@@ -482,8 +488,8 @@
               <div class="shop-card">
 
                 <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <a href="grocery1.html"><img src="./products/crystamin_natural_himalyan_pink_rock_salt.jpg" width="540" height="720" loading="lazy"
-                    alt="crystamin himalyan pink rock salt" class="img-cover">
+                  <img src="electronic_images/bty11.jpeg" width="540" height="720" loading="lazy"
+                    alt="Coffee Bean Caffeine Eye Cream" class="img-cover">
 
                   <div class="card-actions">
 
@@ -505,11 +511,11 @@
                 <div class="card-content">
 
                   <div class="price">
-                    <span class="span">$5.00</span>
+                    <span class="span">$29.00</span>
                   </div>
 
                   <h3>
-                    <a href="#" class="card-title">Himalyan pink rock salt</a>
+                    <a href="#" class="card-title">.....</a>
                   </h3>
 
                   <div class="card-rating">
@@ -535,8 +541,8 @@
               <div class="shop-card">
 
                 <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <a href="grocery1.html"><img src="./products/Khadi_chandan.jpg" width="540" height="720" loading="lazy"
-                    alt="Khadi chandan" class="img-cover">
+                  <img src="electronic_images/hp3.jpeg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
 
                   <div class="card-actions">
 
@@ -558,11 +564,11 @@
                 <div class="card-content">
 
                   <div class="price">
-                    <span class="span">$1.00</span>
+                    <span class="span">$29.00</span>
                   </div>
 
                   <h3>
-                    <a href="#" class="card-title">Khadi chandan</a>
+                    <a href="#" class="card-title">......</a>
                   </h3>
 
                   <div class="card-rating">
@@ -588,8 +594,8 @@
               <div class="shop-card">
 
                 <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <a href="Grocery2.html"><img src="./products/tata_tea_gold_leaf.jpg" width="540" height="720" loading="lazy"
-                    alt="Tata tea " class="img-cover">
+                  <img src="electronic_images/Accessories/img13.jpeg" width="540" height="720" loading="lazy"
+                    alt="Coffee Bean Caffeine Eye Cream" class="img-cover">
 
                   <span class="badge" aria-label="20% off">-20%</span>
 
@@ -613,13 +619,13 @@
                 <div class="card-content">
 
                   <div class="price">
-                    <del class="del">$19.00</del>
+                    <del class="del">$39.00</del>
 
-                    <span class="span">$9.00</span>
+                    <span class="span">$29.00</span>
                   </div>
 
                   <h3>
-                    <a href="#" class="card-title">Tata tea</a>
+                    <a href="#" class="card-title">........</a>
                   </h3>
 
                   <div class="card-rating">
@@ -645,8 +651,8 @@
               <div class="shop-card">
 
                 <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <a href="Grocery2.html"><img src="./products/yardley_london _race_deo.jpg" width="540" height="720" loading="lazy"
-                    alt="Yardley london deo" class="img-cover">
+                  <img src="electronic_images/Accessories/img21.jpeg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
 
                   <div class="card-actions">
 
@@ -668,11 +674,11 @@
                 <div class="card-content">
 
                   <div class="price">
-                    <span class="span">$10.00</span>
+                    <span class="span">$29.00</span>
                   </div>
 
                   <h3>
-                    <a href="#" class="card-title">Yardley london deo</a>
+                    <a href="#" class="card-title">......</a>
                   </h3>
 
                   <div class="card-rating">
@@ -703,9 +709,9 @@
         <div class="container">
 
           <div class="title-wrapper">
-            <h2 class="h2 section-title">Under $15</h2>
+            <h2 class="h2 section-title">Under $25</h2>
 
-            <a href="#" class="btn-link">
+            <a href="Household.html" class="btn-link">
               <span class="span">Shop All Products</span>
 
               <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
@@ -718,8 +724,8 @@
               <div class="shop-card">
 
                 <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <a href="Grocery2.html"><img src="./products/patanjali_sheetal_hair_oil.jpg" width="540" height="720" loading="lazy"
-                    alt="Patanjali sheetal hair oil" class="img-cover">
+                  <img src="electronic_images/fan5.jpeg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
 
                   <span class="badge" aria-label="20% off">-20%</span>
 
@@ -743,13 +749,13 @@
                 <div class="card-content">
 
                   <div class="price">
-                    <del class="del">$19.00</del>
+                    <del class="del">$39.00</del>
 
-                    <span class="span">$9.00</span>
+                    <span class="span">$29.00</span>
                   </div>
 
                   <h3>
-                    <a href="#" class="card-title">Patanjali sheetal hair oil</a>
+                    <a href="#" class="card-title">....</a>
                   </h3>
 
                   <div class="card-rating">
@@ -775,8 +781,8 @@
               <div class="shop-card">
 
                 <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <a href="Grocery2.html"><img src="./products/parachute_pure_coconut_hair_oil.jpg" width="540" height="720" loading="lazy"
-                    alt="Parachute coconut oil" class="img-cover">
+                  <img src="electronic_images/fan6.jpeg" width="540" height="720" loading="lazy"
+                    alt="Bio-shroom Rejuvenating Serum" class="img-cover">
 
                   <div class="card-actions">
 
@@ -798,11 +804,11 @@
                 <div class="card-content">
 
                   <div class="price">
-                    <span class="span">$9.00</span>
+                    <span class="span">$29.00</span>
                   </div>
 
                   <h3>
-                    <a href="#" class="card-title">Parachute coconut oil</a>
+                    <a href="#" class="card-title">.......</a>
                   </h3>
 
                   <div class="card-rating">
@@ -828,8 +834,8 @@
               <div class="shop-card">
 
                 <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <a href="Grocery3.html"><img src="./products/mtr_gulab_jamun.jpg" width="540" height="720" loading="lazy"
-                    alt="MTR Gulab Jamun"  class="img-cover">
+                  <img src="electronic_images/bty12.jpeg" width="540" height="720" loading="lazy"
+                    alt="Coffee Bean Caffeine Eye Cream" class="img-cover">
 
                   <div class="card-actions">
 
@@ -851,11 +857,11 @@
                 <div class="card-content">
 
                   <div class="price">
-                    <span class="span">$9.00</span>
+                    <span class="span">$29.00</span>
                   </div>
 
                   <h3>
-                    <a href="#" class="card-title">MTR Gulab Jamun</a>
+                    <a href="#" class="card-title">.......</a>
                   </h3>
 
                   <div class="card-rating">
@@ -881,8 +887,8 @@
               <div class="shop-card">
 
                 <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <a href="Grocery3.html"><img src="./products/mtr_powder_turmeric.jpg" width="540" height="720" loading="lazy"
-                    alt="Turmeric Powder" class="img-cover">
+                  <img src="electronic_images/bty14.jpeg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
 
                   <div class="card-actions">
 
@@ -904,11 +910,11 @@
                 <div class="card-content">
 
                   <div class="price">
-                    <span class="span">$9.00</span>
+                    <span class="span">$29.00</span>
                   </div>
 
                   <h3>
-                    <a href="#" class="card-title">Turmeric Powder</a>
+                    <a href="#" class="card-title">......</a>
                   </h3>
 
                   <div class="card-rating">
@@ -934,8 +940,8 @@
               <div class="shop-card">
 
                 <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <a href="Grocery3.html"><img src="./products/mangaldeep_temple_gold_agarbatti.jpg" width="540" height="720" loading="lazy"
-                    alt="Mangaldeep Gold Agarbatti" class="img-cover">
+                  <img src="electronic_images/Household/img16.jpeg" width="540" height="720" loading="lazy"
+                    alt="Coffee Bean Caffeine Eye Cream" class="img-cover">
 
                   <span class="badge" aria-label="20% off">-20%</span>
 
@@ -959,13 +965,13 @@
                 <div class="card-content">
 
                   <div class="price">
-                    <del class="del">$19.00</del>
+                    <del class="del">$39.00</del>
 
-                    <span class="span">$9.00</span>
+                    <span class="span">$29.00</span>
                   </div>
 
                   <h3>
-                    <a href="#" class="card-title">Mangaldeep Gold Agarbatti</a>
+                    <a href="#" class="card-title">..........</a>
                   </h3>
 
                   <div class="card-rating">
@@ -991,8 +997,8 @@
               <div class="shop-card">
 
                 <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <a href="Grocery3.html"><img src="./products/lipton_green_tea.jpg" width="540" height="720" loading="lazy"
-                    alt="Lipton green Tea" class="img-cover">
+                  <img src="electronic_images/fan1.jpeg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
 
                   <div class="card-actions">
 
@@ -1014,11 +1020,11 @@
                 <div class="card-content">
 
                   <div class="price">
-                    <span class="span">$9.00</span>
+                    <span class="span">$29.00</span>
                   </div>
 
                   <h3>
-                    <a href="#" class="card-title">Lipton green Tea</a>
+                    <a href="#" class="card-title">.......</a>
                   </h3>
 
                   <div class="card-rating">
@@ -1061,13 +1067,13 @@
             <li>
               <div class="banner-card banner-card-1 has-before hover:shine">
 
-                <p class="card-subtitle">Favourite's</p>
+                <p class="card-subtitle">New Collection</p>
 
-                <h2 class="h2 card-title">Full of Fats. </h2>
+                <h2 class="h2 card-title">.........</h2>
 
                 <a href="#" class="btn btn-secondary">Explore More</a>
 
-                <div class="has-bg-image" style="background-image: url('./products/rice.jpg')"></div>
+                <div class="has-bg-image" style="background-image: url('electronic_images/Accessories/img4.jpg')"></div>
 
               </div>
             </li>
@@ -1078,12 +1084,12 @@
                 <h2 class="h2 card-title">25% off Everything</h2>
 
                 <p class="card-text">
-                  Good for the Health.
+                  ................................
                 </p>
 
                 <a href="#" class="btn btn-secondary">Shop Sale</a>
 
-                <div class="has-bg-image" style="background-image: url('./products/oil.jpg')"></div>
+                <div class="has-bg-image" style="background-image: url('electronic_images/Household/img1.jpeg')"></div>
 
               </div>
             </li>
@@ -1104,58 +1110,23 @@
       <section class="section feature" aria-label="feature" data-section>
         <div class="container">
 
-          <h2 class="h2-large section-title">Why Shop with Glowing?</h2>
+          <h2 class="h2-large section-title">...............</h2>
 
-          <ul class="flex-list">
 
-            <li class="flex-item">
+            <li>
               <div class="feature-card">
 
-                <img src="./assets/images/feature-1.jpg" width="204" height="236" loading="lazy" alt="Guaranteed PURE"
-                  class="card-icon">
+              <center> <img src="img/banner/b1.jpg" alt="" width="1000px", hidden="50px"> </center>
 
-                <h3 class="h3 card-title">Guaranteed PURE</h3>
+                <h3 class="h3 card-title">Guaranteed Quality</h3>
 
                 <p class="card-text">
-                  Pure and natural groceries, free from artificial additives and chemicals. Enjoy fresh, healthy, and sustainably sourced essentials.
+                  Safe, high-quality electronics free from hazardous substances. Enjoy reliable performance and safety with every advanced device we offer.
                 </p>
 
               </div>
             </li>
 
-            <li class="flex-item">
-              <div class="feature-card">
-
-                <img src="./assets/images/feature-2.jpg" width="204" height="236" loading="lazy"
-                  alt="Completely Cruelty-Free" class="card-icon">
-
-                <h3 class="h3 card-title">Completely Cruelty-Free</h3>
-
-                <p class="card-text">
-                  All Grace formulations adhere to strict purity standards and will never contain harsh or toxic
-                  ingredients
-                </p>
-
-              </div>
-            </li>
-
-            <li class="flex-item">
-              <div class="feature-card">
-
-                <img src="./assets/images/feature-3.jpg" width="204" height="236" loading="lazy"
-                  alt="Ingredient Sourcing" class="card-icon">
-
-                <h3 class="h3 card-title">Ingredient Sourcing</h3>
-
-                <p class="card-text">
-                  All Grace formulations adhere to strict purity standards and will never contain harsh or toxic
-                  ingredients
-                </p>
-
-              </div>
-            </li>
-
-          </ul>
 
         </div>
       </section>
@@ -1172,10 +1143,10 @@
         <div class="container">
 
           <figure class="offer-banner">
-            <img src="./products/wheat1.jpg" width="305" height="408" loading="lazy" alt="offer products"
+            <img src="electronic_images/Accessories/img7.jpg" width="305" height="408" loading="lazy" alt="offer products"
               class="w-100">
 
-            <img src="./products/wheat2.jpg" width="450" height="625" loading="lazy" alt="offer products"
+            <img src="electronic_images/Household/img2.webp" width="450" height="625" loading="lazy" alt="offer products"
               class="w-100">
           </figure>
 
@@ -1187,10 +1158,10 @@
               <span class="badge" aria-label="20% off">-20%</span>
             </p>
 
-            <h2 class="h2-large section-title">Farm Wheat...</h2>
+            <h2 class="h2-large section-title">Electronic Appliances</h2>
 
             <p class="section-text">
-              Direct from Farm To your Door Step . Support Farmers
+              Explore Electronics
             </p>
 
             <div class="countdown">
@@ -1202,7 +1173,7 @@
 
             </div>
 
-            <a href="#" class="btn btn-primary">Get Only $29.00</a>
+            <a href="#" class="btn btn-primary">Get Only $39.00</a>
 
           </div>
 

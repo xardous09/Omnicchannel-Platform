@@ -1,4 +1,4 @@
-import products from "./Electronic_products.js";
+import products from "./Electronic_products1.js";
 
 const cart = () => {
     let listCartHTML = document.querySelector('.listCart');

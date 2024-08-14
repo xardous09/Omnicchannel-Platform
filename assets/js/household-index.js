@@ -1,12 +1,12 @@
-import products from './Electronic_products';
-import cart from './electronics-cart';
+import products from './Electronic_products1.js';
+import cart from './household-cart.js';
 
 let app = document.getElementById('app');
 let temporaryContent = document.getElementById('temporaryContent');
 
 // load layout file
 const loadTemplate = () => {
-    fetch('/template1.html')
+    fetch('/electronic-template.html')
         .then(response => response.text())
         .then(html => {
             console.log('Template loaded');
