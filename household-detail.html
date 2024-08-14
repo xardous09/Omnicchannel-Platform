@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     <!-- Favicon -->
     <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/product-page.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/product-page.css">
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,16 +30,16 @@
         <div class="header-top" data-header>
             <div class="container">
                 <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-                    <span class="line line-1"></span>
-                    <span class="line line-2"></span>
-                    <span class="line line-3"></span>
-                </button>
+                        <span class="line line-1"></span>
+                        <span class="line line-2"></span>
+                        <span class="line line-3"></span>
+                    </button>
 
                 <div class="input-wrapper">
                     <input type="search" name="search" placeholder="Search product" class="search-field">
                     <button class="search-submit" aria-label="search">
-                        <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
-                    </button>
+                            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+                        </button>
                 </div>
 
                 <a href="#" class="logo">
@@ -49,25 +48,27 @@
 
                 <div class="header-actions">
                     <button class="header-action-btn" aria-label="user">
-                        <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-                    </button>
+                            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                        </button>
+
                     <div class="icon-cart">
                         <button class="header-action-btn" aria-label="cart item">            
-                        <ion-icon name="bag-handle-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
-            
-                        <span class="btn-badge">0</span>
-                    </button>
+                                <ion-icon name="bag-handle-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+                    
+                                <span class="btn-badge">0</span>
+                            </button>
                     </div>
                 </div>
 
                 <nav class="navbar">
                     <ul class="navbar-list">
-                        <li><a href="landing-page.html" class="navbar-link" data-nav-link>Home</a></li>
+                        <li><a href="#home" class="navbar-link" data-nav-link>Home</a></li>
                         <li><a href="#newdeals" class="navbar-link has-after">New Deals</a></li>
-                        <li><a href="Electronic.html" class="navbar-link has-after">Electronics</a></li>
-                        <li><a href="grocery.html" class="navbar-link has-after">Groceries</a></li>
+                        <li><a href="#collection" class="navbar-link has-after">Electronics</a></li>
+                        <li><a href="#shop" class="navbar-link has-after">Groceries</a></li>
                         <li><a href="Cosmetics.html" class="navbar-link has-after">Cosmetics</a></li>
                         <li><a href="Fashon.html" class="navbar-link has-after">Fashion</a></li>
+                        <li><a href="#blog" class="navbar-link has-after">New Releases</a></li>
                         <li><a href="#blog" class="navbar-link has-after">Best Sellers</a></li>
                         <li><a href="#blog" class="navbar-link has-after">Customer Service</a></li>
                     </ul>
@@ -85,8 +86,8 @@
                 </a>
 
                 <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
-                    <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-                </button>
+                        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                    </button>
             </div>
 
             <ul class="navbar-list">
@@ -99,14 +100,38 @@
         </div>
         <div class="overlay" data-nav-toggler data-overlay></div>
     </div>
-
     <div id="app"></div>
     <div id="temporaryContent">
-        <div class="listProduct">
-            If you don't know how to run this project, you need to watch the detailed instructional video to understand how the project works.
-        </div>
-    </div>
+        <div class="title">PRODUCT DETAIL</div>
+        <div class="detail">
+            <div class="image">
+                <img src="">
+            </div>
+            <div class="content">
+                <h1 class="name"></h1>
+                <div class="price"></div>
+                <div class="buttons">
+                    <button>Check Out</button>
+                    <button class="addCart">Add To Cart 
+                        <span>
+                            <svg class="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"/>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="description"></div>
+                <button class="header-action-btn" aria-label="favourite item">
+                    <a href="landing-page.html"><H5>CHECK AVAILABILITY ON STORE</H5></a>
+        
+                </button>
+            </div>
 
+        </div>
+
+        <div class="title">Similar product</div>
+        <div class="listProduct"></div>
+    </div>
     <!-- Footer -->
     <footer class="footer" data-section>
         <div class="container">
@@ -201,7 +226,7 @@
     <!-- Ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="assets/js/index.js" type="module"></script>
+    <script src="assets/js/household-detail.js" type="module"></script>
 </body>
 
 </html>

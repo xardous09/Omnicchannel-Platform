@@ -1,10 +1,10 @@
 import products from './Electronic_products.js';
 import cart from './electronics-cart.js';
 
-let listProduct = document.getElementById('listProduct');
 let app = document.getElementById('app');
 let temporaryContent = document.getElementById('temporaryContent');
 
+// load layout file
 const loadTemplate = () => {
     fetch('/electronic-template.html')
         .then(response => response.text())
@@ -23,36 +23,24 @@ const loadTemplate = () => {
 loadTemplate();
 
 const initApp = () => {
-    let productId = new URLSearchParams(window.location.search).get('id');
-    console.log('Product ID:', productId);
-    let thisProduct = products.filter(value => value.id == productId)[0];
-    if (!thisProduct) {
-        window.location.href = "/";
-    }
-
-    let detail = document.querySelector('.detail');
-    console.log('Detail element:', detail);
-    detail.querySelector('.image img').src = thisProduct.image;
-    detail.querySelector('.name').innerText = thisProduct.name;
-    detail.querySelector('.price').innerText = '$' + thisProduct.price;
-    detail.querySelector('.description').innerText = thisProduct.description;
-    detail.querySelector('.addCart').dataset.id = thisProduct.id;
-
+    // load list product
     let listProductHTML = document.querySelector('.listProduct');
+    listProductHTML.innerHTML = null;
+
     products.forEach(product => {
         let newProduct = document.createElement('div');
         newProduct.classList.add('item');
         newProduct.innerHTML =
             `<a href="/detail.html?id=${product.id}">
-            <img src="${product.image}">
-        </a>
-        <h2>${product.name}</h2>
-        <div class="price">$${product.price}</div>
-        <button 
-            class="addCart" 
-            data-id='${product.id}'>
-                Add To Cart
-        </button>`;
+             <img src="${product.image}">
+         </a>
+         <h2>${product.name}</h2>
+         <div class="price">$${product.price}</div>
+         <button 
+             class="addCart" 
+             data-id='${product.id}'>
+                 Add To Cart
+         </button>`;
         listProductHTML.appendChild(newProduct);
     });
 }

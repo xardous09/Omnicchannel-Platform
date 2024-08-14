@@ -1,5 +1,5 @@
-import products from './Electronic_products.js';
-import cart from './electronics-cart.js';
+import products from './Electronic_products1.js';
+import cart from './household-cart.js';
 
 let listProduct = document.getElementById('listProduct');
 let app = document.getElementById('app');
