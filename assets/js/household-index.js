@@ -1,12 +1,21 @@
+<<<<<<<< HEAD:assets/js/household-index.js
 import products from './Electronic_products1.js';
 import cart from './household-cart.js';
+========
+import products from './Grocery_all1.js';
+import cart from './grocery-cart.js';
+>>>>>>>> 6977c416c89718376764ad0a239c53d202812e3d:assets/js/grocery-index.js
 
 let app = document.getElementById('app');
 let temporaryContent = document.getElementById('temporaryContent');
 
 // load layout file
 const loadTemplate = () => {
+<<<<<<<< HEAD:assets/js/household-index.js
     fetch('/electronic-template.html')
+========
+    fetch('/grocery-templets.html')
+>>>>>>>> 6977c416c89718376764ad0a239c53d202812e3d:assets/js/grocery-index.js
         .then(response => response.text())
         .then(html => {
             console.log('Template loaded');

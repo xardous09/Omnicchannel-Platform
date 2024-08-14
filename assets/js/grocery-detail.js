@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import products from './grocery-products.js';
+=======
+import products from './Grocery_all1.js';
+>>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
 =======
 import products from './Grocery_all1.js';
 >>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
@@ -11,12 +15,15 @@ let temporaryContent = document.getElementById('temporaryContent');
 
 const loadTemplate = () => {
 <<<<<<< HEAD
+<<<<<<< HEAD
     fetch('/grocery-templets.html') // Make sure the file path is correct
         .then(response => response.text())
         .then(html => {
             app.innerHTML = html;
             let contentTab = document.getElementById('contentTab');
 =======
+=======
+>>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
     fetch('/grocery-templets.html')
         .then(response => response.text())
         .then(html => {
@@ -24,12 +31,16 @@ const loadTemplate = () => {
             app.innerHTML = html;
             let contentTab = document.getElementById('contentTab');
             console.log('Content tab:', contentTab);
+<<<<<<< HEAD
+>>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
+=======
 >>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
             contentTab.innerHTML = temporaryContent.innerHTML;
             temporaryContent.innerHTML = null;
             cart();
             initApp();
         })
+<<<<<<< HEAD
 <<<<<<< HEAD
 }
 
@@ -44,6 +55,8 @@ const initApp = () => {
 
     let detail = document.querySelector('.detail');
 =======
+=======
+>>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
         .catch(error => console.error('Error loading template:', error));
 }
 loadTemplate();
@@ -58,6 +71,9 @@ const initApp = () => {
 
     let detail = document.querySelector('.detail');
     console.log('Detail element:', detail);
+<<<<<<< HEAD
+>>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
+=======
 >>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
     detail.querySelector('.image img').src = thisProduct.image;
     detail.querySelector('.name').innerText = thisProduct.name;
@@ -70,6 +86,7 @@ const initApp = () => {
         let newProduct = document.createElement('div');
         newProduct.classList.add('item');
         newProduct.innerHTML =
+<<<<<<< HEAD
 <<<<<<< HEAD
             `<a href="/grocery-detail.html?id=${product.id}">
                 <img src="${product.image}">
@@ -85,6 +102,8 @@ const initApp = () => {
 
 loadTemplate();
 =======
+=======
+>>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
             `<a href="/detail.html?id=${product.id}">
             <img src="${product.image}">
         </a>
@@ -97,5 +116,9 @@ loadTemplate();
         </button>`;
         listProductHTML.appendChild(newProduct);
     });
+<<<<<<< HEAD
+}
+>>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
+=======
 }
 >>>>>>> 6977c416c89718376764ad0a239c53d202812e3d

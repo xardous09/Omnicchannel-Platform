@@ -1,5 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import products from "./grocery-products.js";
+=======
+import products from "./Grocery_all1.js";
+
+>>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
 =======
 import products from "./Grocery_all1.js";
 
@@ -16,15 +21,21 @@ const cart = () => {
     iconCart.addEventListener('click', () => {
         body.classList.toggle('activeTabCart');
 <<<<<<< HEAD
+<<<<<<< HEAD
     })
     closeCart.addEventListener('click', () => {
         body.classList.toggle('activeTabCart');
     })
 =======
+=======
+>>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
     });
     closeCart.addEventListener('click', () => {
         body.classList.toggle('activeTabCart');
     });
+<<<<<<< HEAD
+>>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
+=======
 >>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
 
     const setProductInCart = (idProduct, value) => {
@@ -41,8 +52,14 @@ const cart = () => {
         }
         localStorage.setItem('cart', JSON.stringify(cart));
 <<<<<<< HEAD
+<<<<<<< HEAD
         addCartToHTML();
     }
+=======
+        console.log('Cart updated:', cart);
+        addCartToHTML();
+    };
+>>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
 =======
         console.log('Cart updated:', cart);
         addCartToHTML();
@@ -55,7 +72,11 @@ const cart = () => {
         if (cart.length > 0) {
             cart.forEach(item => {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 totalQuantity = totalQuantity + item.quantity;
+=======
+                totalQuantity += item.quantity;
+>>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
 =======
                 totalQuantity += item.quantity;
 >>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
@@ -66,6 +87,7 @@ const cart = () => {
                 let positionProduct = products.findIndex((value) => value.id == item.product_id);
                 let info = products[positionProduct];
 <<<<<<< HEAD
+<<<<<<< HEAD
                 listCartHTML.appendChild(newItem);
                 newItem.innerHTML = `
                 <div class="image">
@@ -74,12 +96,17 @@ const cart = () => {
                     <div class="name">
                     ${info.name}
 =======
+=======
+>>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
                 newItem.innerHTML = `
                     <div class="image">
                         <img src="${info.image}">
                     </div>
                     <div class="name">
                         ${info.name}
+<<<<<<< HEAD
+>>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
+=======
 >>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
                     </div>
                     <div class="totalPrice">$${info.price * item.quantity}</div>
@@ -90,16 +117,22 @@ const cart = () => {
                     </div>
                 `;
 <<<<<<< HEAD
+<<<<<<< HEAD
             })
         }
         iconCartSpan.innerText = totalQuantity;
     }
 =======
+=======
+>>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
                 listCartHTML.appendChild(newItem);
             });
         }
         iconCartSpan.innerText = totalQuantity;
     };
+<<<<<<< HEAD
+>>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
+=======
 >>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
 
     document.addEventListener('click', (event) => {
@@ -124,6 +157,7 @@ const cart = () => {
                 break;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
     })
 
     const initApp = () => {
@@ -136,6 +170,8 @@ const cart = () => {
     initApp();
 }
 =======
+=======
+>>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
     });
 
     const initApp = () => {
@@ -148,5 +184,8 @@ const cart = () => {
     initApp();
 };
 
+<<<<<<< HEAD
+>>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
+=======
 >>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
 export default cart;
