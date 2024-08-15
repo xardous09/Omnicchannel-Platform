@@ -1,14 +1,5 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 import products from "./grocery-products.js";
-=======
-import products from "./Grocery_all1.js";
 
->>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
-=======
-import products from "./Grocery_all1.js";
-
->>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
 const cart = () => {
     let listCartHTML = document.querySelector('.listCart');
     let iconCart = document.querySelector('.icon-cart');
@@ -20,23 +11,10 @@ const cart = () => {
     // open and close tab
     iconCart.addEventListener('click', () => {
         body.classList.toggle('activeTabCart');
-<<<<<<< HEAD
-<<<<<<< HEAD
-    })
-    closeCart.addEventListener('click', () => {
-        body.classList.toggle('activeTabCart');
-    })
-=======
-=======
->>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
     });
     closeCart.addEventListener('click', () => {
         body.classList.toggle('activeTabCart');
     });
-<<<<<<< HEAD
->>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
-=======
->>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
 
     const setProductInCart = (idProduct, value) => {
         let positionThisProductInCart = cart.findIndex((value) => value.product_id == idProduct);
@@ -51,63 +29,29 @@ const cart = () => {
             cart[positionThisProductInCart].quantity = value;
         }
         localStorage.setItem('cart', JSON.stringify(cart));
-<<<<<<< HEAD
-<<<<<<< HEAD
-        addCartToHTML();
-    }
-=======
         console.log('Cart updated:', cart);
         addCartToHTML();
     };
->>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
-=======
-        console.log('Cart updated:', cart);
-        addCartToHTML();
-    };
->>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
 
     const addCartToHTML = () => {
         listCartHTML.innerHTML = '';
         let totalQuantity = 0;
         if (cart.length > 0) {
             cart.forEach(item => {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                totalQuantity = totalQuantity + item.quantity;
-=======
                 totalQuantity += item.quantity;
->>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
-=======
-                totalQuantity += item.quantity;
->>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
                 let newItem = document.createElement('div');
                 newItem.classList.add('item');
                 newItem.dataset.id = item.product_id;
 
                 let positionProduct = products.findIndex((value) => value.id == item.product_id);
                 let info = products[positionProduct];
-<<<<<<< HEAD
-<<<<<<< HEAD
-                listCartHTML.appendChild(newItem);
-                newItem.innerHTML = `
-                <div class="image">
-                        <img src="${info.image}">
-                    </div>
-                    <div class="name">
-                    ${info.name}
-=======
-=======
->>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
+
                 newItem.innerHTML = `
                     <div class="image">
                         <img src="${info.image}">
                     </div>
                     <div class="name">
                         ${info.name}
-<<<<<<< HEAD
->>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
-=======
->>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
                     </div>
                     <div class="totalPrice">$${info.price * item.quantity}</div>
                     <div class="quantity">
@@ -116,24 +60,11 @@ const cart = () => {
                         <span class="plus" data-id="${info.id}">></span>
                     </div>
                 `;
-<<<<<<< HEAD
-<<<<<<< HEAD
-            })
-        }
-        iconCartSpan.innerText = totalQuantity;
-    }
-=======
-=======
->>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
                 listCartHTML.appendChild(newItem);
             });
         }
         iconCartSpan.innerText = totalQuantity;
     };
-<<<<<<< HEAD
->>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
-=======
->>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
 
     document.addEventListener('click', (event) => {
         let buttonClick = event.target;
@@ -156,22 +87,6 @@ const cart = () => {
             default:
                 break;
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
-    })
-
-    const initApp = () => {
-
-        if (localStorage.getItem('cart')) {
-            cart = JSON.parse(localStorage.getItem('cart'));
-            addCartToHTML();
-        }
-    }
-    initApp();
-}
-=======
-=======
->>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
     });
 
     const initApp = () => {
@@ -184,8 +99,4 @@ const cart = () => {
     initApp();
 };
 
-<<<<<<< HEAD
->>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
-=======
->>>>>>> 6977c416c89718376764ad0a239c53d202812e3d
 export default cart;
