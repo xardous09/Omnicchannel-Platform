@@ -1,12 +1,12 @@
-import products from '/products.js';
-import cart from './cart-store.js';
+import products from './grocery-products-store.js';
+import cart from './grocery-cart-store.js';
 
 let app = document.getElementById('app');
 let temporaryContent = document.getElementById('temporaryContent');
 
 // load layout file
 const loadTemplate = () => {
-    fetch('/templete-store.html')
+    fetch('/grocery-templete-store.html')
         .then(response => response.text())
         .then(html => {
             app.innerHTML = html;
@@ -27,7 +27,7 @@ const initApp = () => {
         let newProduct = document.createElement('div');
         newProduct.classList.add('item');
         newProduct.innerHTML =
-            `<a href="/detail-store.html?id=${product.id}">
+            `<a href="/grocery-detail-store.html?id=${product.id}">
              <img src="${product.image}">
          </a>
          <h2>${product.name}</h2>
